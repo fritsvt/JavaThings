@@ -10,7 +10,7 @@ public class Main extends Applet {
     }
 
     public void paint(Graphics g) {
-        this.setSize(350, 140);
+        this.setSize(450, 140);
 
         setBackground(Color.white);
         g.setColor(Color.black);
@@ -35,6 +35,8 @@ public class Main extends Applet {
 
         g.setColor(Color.black);
         g.drawOval(255, 80, 50, 50);
+
+        g.drawRect(0, 175, 300, 50);
     }
 
 }
