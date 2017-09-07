@@ -3,7 +3,6 @@ package h8;
 import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
-import h8.Calculation;
 
 public class Main extends Applet {
     private TextField input0;
@@ -41,6 +40,8 @@ public class Main extends Applet {
         PlusButtonListener pl = new PlusButtonListener();
         Plus.addActionListener( pl );
         add(Plus);
+
+
 
         Min = new Button("-");
         MinButtonListener ml = new MinButtonListener();
