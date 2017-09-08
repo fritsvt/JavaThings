@@ -6,7 +6,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Random;
 
 public class Main extends Applet {
@@ -79,6 +78,9 @@ public class Main extends Applet {
                         Random r = new Random();
                         int cpu = r.nextInt(4-1) + 1;
                         left = left - cpu;
+                    } else if (left > 5 && left < 10) {
+                        int move = left - 6;
+                        left = left - move;
                     } else {
                         int move = left - 1;
                         if (move < 1) {
